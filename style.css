@@ -11,8 +11,12 @@
     padding: 4rem 1.5rem;
   }
 
+  .code {
+    background-color: aquamarine;
+  }
+
   h1 {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: normal;
     color: #ffffff;
     margin-bottom: 2.5rem;
@@ -50,8 +54,15 @@
     color: #444;
   }
 
+  .posts{
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 15px;
+  }
+
   .mid{
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lora', serif;
     font-style: italic;
   }
