@@ -13,10 +13,14 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     background: #0d0d0d;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    margin-bottom: 2rem;
   }
   pre {
     font-family: 'Courier New', monospace;
@@ -24,14 +28,19 @@
     line-height: 1.2;
     letter-spacing: 0.05em;
   }
+ 
+  @media (max-width: 700px) {
+    pre {
+      font-size: clamp(3.5px, calc(100vw / 82), 11px);
+      letter-spacing: 0;
+    }
+  }
 </style>
 </head>
 <body>
 
 <h1 class="mid">coming soon</h1>
-<br>
-<br>
-<br>
+
 <pre id="art"></pre>
 <script>
 const raw = `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
@@ -81,7 +90,7 @@ const raw = `░░░░░░░░░░░░░░░░░░░░░░�
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`;
 
 const colors = {
-  '░': '#2e1a1a',
+  '░': '#0d0d0d',
   '▒': '#7a3a3a',
   '▓': '#bf6a6a',
   '█': '#f0a0a0',
